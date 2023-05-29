@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	crossorigin="anonymous">
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<a class="navbar-brand" href="#">Aplicacion Mundial</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse"
+			data-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false"
+			aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				
+				<li class="nav-item"><a class="nav-link" href="/">Inicio</a></li>
+			
+			</ul>
+
+		</div>
+	</nav>
+
+	<div class="container text-center">
+		<div>
+			<h1>Bienvenidos </h1>
+		</div>
+		<div class="p-2">
+			<a class="h2" th:href="@{/selecciones}" >Lista de Selecciones</a>
+		</div>
+		<div class="p-2">
+			<a class="h2" th:href="@{/selecciones/nueva}" >Agregar Seleccion</a>
+		</div>
+		<div class="p-2">
+			<a class="h2" th:href="@{/continentes}" >Lista de Continentes</a>
+		</div>
+		<div class="p-2">
+			<a class="h2" th:href="@{/continentes/nuevo}" >Agregar Continente</a>
+		</div>
+
+	</div>
+
+</body>
+</html>
